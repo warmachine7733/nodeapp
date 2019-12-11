@@ -4,7 +4,7 @@ const port = 3000;
 
 //route
 app.get("/", (req, res) =>
-  res.send("I am running in android phone termux app")
+  res.send("I am running in android phone in termux app")
 );
 
 //start
