@@ -2,13 +2,13 @@
 FROM node:alpine3.10
 
 #Make app directory in container
-RUN mkdir /app
+RUN mkdir /nodeapp
 
 #Identify working directory
-WORKDIR /app
+WORKDIR /nodeapp
 
 #Copy package
-COPY package.json /app
+COPY package.json /nodeapp
 
 #Install rpm packages from package.json
 RUN npm install
