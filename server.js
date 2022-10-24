@@ -4,7 +4,7 @@ const port = 8080
 
 //route
 app.get("/", (req, res) =>
-  res.send("I am running in android phone in termux app")
+  res.send("deployed in openshift using docker")
 );
 
 //start
