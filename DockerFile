@@ -14,7 +14,7 @@ COPY package.json /nodeapp
 RUN npm install
 
 #Copy over app to app folder
-COPY . /app 
+COPY . /nodeapp/ 
 
 #Expose server at port ( accessible outside of container)
 EXPOSE 8080 
