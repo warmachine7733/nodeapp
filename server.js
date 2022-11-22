@@ -4,7 +4,7 @@ const app = express();
 
 const corsConfig = {
   credentials: true,
-  origin: 'https://127.0.0.1:3000',
+  origin: true,
 };
 app.use(cors(corsConfig));
 // app.use(function (req, res, next) {
