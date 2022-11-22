@@ -28,7 +28,7 @@ app.use(function (req, res, next) {
 //route
 const port = process.env.PORT || 9000;
 app.get("/", (req, res) =>{
-  res.cookie("testCookie","dumbChrome", { sameSite: 'none', secure: true})
+  res.cookie("testCookie","dumbChrome", { sameSite: 'false', secure: true})
   res.send("deployed in openshift using docker")
 }
 );
