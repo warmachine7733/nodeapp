@@ -7,7 +7,7 @@ app.use(cors());
 //route
 const port = process.env.PORT;
 app.get("/", (req, res) =>{
-  res.cookie("testCookie","dumbChrome", { sameSite: 'none', secure: true,httpOnly:true})
+  res.cookie("testCookie","dumbChrome", { sameSite: 'false', secure: true,httpOnly:true})
   res.send("deployed in openshift using docker")
 }
 );
